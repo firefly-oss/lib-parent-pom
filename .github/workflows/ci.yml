@@ -1,4 +1,4 @@
-name: Parent POM CI/CD
+name: Lib Parent POM CI/CD
 
 on:
   push:
