@@ -8,6 +8,6 @@ on:
 
 jobs:
   build-and-publish:
-    uses: catalis-vc/ci-cd/.github/workflows/lib-workflow.yml@main
+    uses: catalis-vc/cicd/.github/workflows/lib-workflow.yml@main
     secrets:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
