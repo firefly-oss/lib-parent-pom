@@ -152,6 +152,57 @@
         </dependencies>
     </dependencyManagement>
 
+    <!-- Distribución a GitHub Packages -->
+    <distributionManagement>
+
+        <!-- Repositorio para RELEASES -->
+        <repository>
+            <id>github-releases</id>
+            <name>GitHub Maven Packages (Releases)</name>
+            <url>https://maven.pkg.github.com/catalis-vc/maven-packages</url>
+        </repository>
+
+        <!-- Repositorio para SNAPSHOTS -->
+        <snapshotRepository>
+            <id>github-snapshots</id>
+            <name>GitHub Maven Packages (Snapshots)</name>
+            <url>https://maven.pkg.github.com/catalis-vc/maven-packages</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+
+    <!-- Para que Maven sepa de dónde descargar dependencias -->
+    <repositories>
+        <!-- Para descargar RELEASES -->
+        <repository>
+            <id>github-releases</id>
+            <name>GitHub Maven Packages (Releases)</name>
+            <url>https://maven.pkg.github.com/catalis-vc/maven-packages</url>
+        </repository>
+
+        <!-- Para descargar SNAPSHOTS -->
+        <repository>
+            <id>github-snapshots</id>
+            <name>GitHub Maven Packages (Snapshots)</name>
+            <url>https://maven.pkg.github.com/catalis-vc/maven-packages</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- Idem para plugins por si hiciera falta -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>github-plugins</id>
+            <name>GitHub Plugins</name>
+            <url>https://maven.pkg.github.com/catalis-vc/maven-packages</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
         <pluginManagement>
             <plugins>
