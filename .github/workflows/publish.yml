@@ -1,14 +1,15 @@
-name: Publish Library
+name: Publish to GitHub Packages
 
 on:
   push:
-    branches: [ "main", "develop" ]
+    branches: ["main"]
   pull_request:
 
 jobs:
-  publish:
+  build-and-publish:
     uses: catalis-vc/cicd/.github/workflows/build-maven.yaml@main
     with:
-      java-version: '21'
+      java-version: "21"
+      skip-tests: false
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PAT_GITHUB_PACKAGES: ${{ secrets.PAT_GITHUB_PACKAGES }}
