@@ -12,4 +12,4 @@ jobs:
       java-version: "21"
       skip-tests: false
     secrets:
-      PAT_GITHUB_PACKAGES: ${{ secrets.PAT_GITHUB_PACKAGES }}
+      PAT_GITHUB_PACKAGE: ${{ secrets.PAT_GITHUB_PACKAGE }}
