@@ -161,7 +161,6 @@
             <name>GitHub Maven Packages (Releases)</name>
             <url>https://maven.pkg.github.com/catalis-vc/maven-packages</url>
         </repository>
-
         <!-- Repositorio para SNAPSHOTS -->
         <snapshotRepository>
             <id>github-snapshots</id>
