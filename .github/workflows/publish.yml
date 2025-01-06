@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish:
-    uses: catalis-vc/cicd/.github/workflows/build-maven.yaml@v1
+    uses: catalis-vc/cicd/.github/workflows/build-maven.yaml@main
     with:
       java-version: '21'
     secrets:
