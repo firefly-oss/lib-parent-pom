@@ -1,0 +1,14 @@
+name: Publish Library
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+
+jobs:
+  publish:
+    uses: catalis-vc/cicd/.github/workflows/build-maven.yaml@v1
+    with:
+      java-version: '21'
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
