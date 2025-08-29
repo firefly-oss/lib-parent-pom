@@ -28,7 +28,7 @@ To use this parent POM in your library project, add the following to your `pom.x
 
 ```xml
 <parent>
-    <groupId>com.catalis</groupId>
+    <groupId>com.firefly</groupId>
     <artifactId>lib-parent-pom</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </parent>
@@ -97,7 +97,7 @@ openapi.date.library=java8
 Default package structure is configured as:
 
 ```properties
-base.package=com.catalis
+base.package=com.firefly
 openapi.base.package=${base.package}.${project.artifactId}
 openapi.model.package=${openapi.base.package}.interfaces.dto
 openapi.api.package=${openapi.base.package}.interfaces.api
